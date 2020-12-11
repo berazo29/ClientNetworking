@@ -40,7 +40,7 @@ int main(int argc, char const *argv[])
     printf("%s\n",buffer );
     memset(buffer,0,strlen(buffer));
 
-    send(sock , "REG|12|Who are you?|" , strlen("REG|12|Who are you?") , 0 );
+    send(sock , "REG|12|Who are you?|" , strlen("REG|12|Who are you?|") , 0 );
     valread = read( sock , buffer, 1024);
     printf("%s\n",buffer );
     memset(buffer,0,strlen(buffer));
